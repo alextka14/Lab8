@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.NewMovieController">
+    <children>
+        <Label layoutX="60.0" layoutY="20.0" text="%creating_new_movie">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+
+        <Label layoutX="20.0" layoutY="70.0" text="%name"/>
+        <TextField fx:id="nameField" layoutX="150.0" layoutY="70.0" promptText="%name_prompt"/>
+
+        <Label layoutX="20.0" layoutY="100.0" text="%coordinates_x"/>
+        <TextField fx:id="coordinatesXField" layoutX="150.0" layoutY="100.0" promptText="%coordinates_x_prompt"/>
+
+        <Label layoutX="20.0" layoutY="130.0" text="%coordinates_y"/>
+        <TextField fx:id="coordinatesYField" layoutX="150.0" layoutY="130.0" promptText="%coordinates_y_prompt"/>
+
+        <Label layoutX="20.0" layoutY="160.0" text="%oscars_count"/>
+        <TextField fx:id="oscarsCountField" layoutX="150.0" layoutY="160.0" promptText="%oscars_count_prompt"/>
+
+        <Label layoutX="20.0" layoutY="190.0" text="%budget"/>
+        <TextField fx:id="budgetField" layoutX="150.0" layoutY="190.0" promptText="%budget_prompt"/>
+
+        <Label layoutX="20.0" layoutY="220.0" text="%tagline"/>
+        <TextField fx:id="taglineField" layoutX="150.0" layoutY="220.0" promptText="%tagline_prompt"/>
+
+        <Label layoutX="20.0" layoutY="250.0" text="%genre"/>
+        <ChoiceBox fx:id="genreChoiceBox" layoutX="150.0" layoutY="250.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="MUSICAL"/>
+                    <String fx:value="ADVENTURE"/>
+                    <String fx:value="TRAGEDY"/>
+                    <String fx:value="THRILLER"/>
+                    <String fx:value="FANTASY"/>
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+
+        <Label layoutX="20.0" layoutY="310.0" text="%person_name"/>
+        <TextField fx:id="personNameField" layoutX="150.0" layoutY="310.0" promptText="%person_name_prompt"/>
+
+        <Label layoutX="20.0" layoutY="340.0" text="%birthday"/>
+        <DatePicker fx:id="birthdayPicker" layoutX="150.0" layoutY="340.0" promptText="%birthday_prompt"/>
+
+        <Label layoutX="20.0" layoutY="370.0" text="%location_x"/>
+        <TextField fx:id="locationXField" layoutX="150.0" layoutY="370.0" promptText="%location_x_prompt"/>
+
+        <Label layoutX="20.0" layoutY="400.0" text="%location_y"/>
+        <TextField fx:id="locationYField" layoutX="150.0" layoutY="400.0" promptText="%location_y_prompt"/>
+
+        <Label layoutX="20.0" layoutY="430.0" text="%location_z"/>
+        <TextField fx:id="locationZField" layoutX="150.0" layoutY="430.0" promptText="%location_z_prompt"/>
+
+        <Label layoutX="20.0" layoutY="460.0" text="%location_name"/>
+        <TextField fx:id="locationNameField" layoutX="150.0" layoutY="460.0" promptText="%location_name_prompt"/>
+
+        <Button layoutX="150.0" layoutY="500.0" text="%submit" onAction="#handleSubmit"/>
+    </children>
+</AnchorPane>

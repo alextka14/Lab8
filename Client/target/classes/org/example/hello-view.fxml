@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.HelloViewController">
+    <children>
+        <HBox layoutX="800.0" layoutY="10.0" spacing="10">
+            <children>
+                <Button fx:id="logoutButton" onAction="#handleLogout" text="%logout" />
+            </children>
+        </HBox>
+        <Button fx:id="TableButton" layoutX="90.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToTable" prefHeight="57.0" prefWidth="269.0" style="-fx-background-color: blue;" text="Лехан пустил фонтан" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Label fx:id="helloLabel" layoutX="435.0" layoutY="8.0" text="%hello_view">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="72.0" layoutY="160.0" style="-fx-font-style: italic;" />
+
+        <Button fx:id="infoButton" layoutX="121.0" layoutY="100.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="79.0" style="-fx-font-size: 16px; -fx-background-color: blue; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Info" />
+        <Label layoutX="65.0" layoutY="160.0" style="-fx-font-style: italic;" text="%info_description" />
+
+        <Button fx:id="addButton" layoutX="734.0" layoutY="100.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Add {Element}" />
+        <Label layoutX="705.0" layoutY="160.0" style="-fx-font-style: italic;" text="%add_element_description" />
+
+        <Button fx:id="updateButton" layoutX="713.0" layoutY="191.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Update ID {Element}" />
+        <TextField fx:id="updateIdField" layoutX="897" layoutY="201.0" prefWidth="50.0" />
+        <Label layoutX="706.0" layoutY="250.0" style="-fx-font-style: italic;" text="%update_id_element_description" />
+
+        <Button fx:id="removeByIdButton" layoutX="430.0" layoutY="191.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #be2525; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Remove by ID" />
+        <TextField fx:id="removeByIdField" layoutX="570.0" layoutY="201.0" prefWidth="50.0" />
+        <Label layoutX="397.0" layoutY="250.0" style="-fx-font-style: italic;" text="%remove_by_id_description" />
+
+        <Button fx:id="clearButton" layoutX="462.0" layoutY="100.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #be2525; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Clear" />
+        <Label layoutX="460.0" layoutY="160.0" style="-fx-font-style: italic;" text="%clear_description" />
+
+        <Button fx:id="removeFirstButton" layoutX="434.0" layoutY="293.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #be2525; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Remove First" />
+        <Label layoutX="384.0" layoutY="351.0" style="-fx-font-style: italic;" text="%remove_first_description" />
+
+        <Button fx:id="addIfMaxButton" layoutX="710.0" layoutY="293.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Add If Max {Element}" />
+        <Label layoutX="657.0" layoutY="351.0" style="-fx-font-style: italic;" text="%add_if_max_element_description" />
+
+        <Button fx:id="removeGreaterButton" layoutX="397.0" layoutY="391.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #be2525; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Remove Greater {Element}" />
+        <Label layoutX="409.0" layoutY="445.0" style="-fx-font-style: italic;" text="%remove_greater_element_description" />
+
+        <Button fx:id="sumOfBudgetButton" layoutX="731.0" layoutY="391.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Sum of Budget" />
+        <Label layoutX="694.0" layoutY="445.0" style="-fx-font-style: italic;" text="%sum_of_budget_description" />
+
+        <Button fx:id="minByNameButton" layoutX="736.0" layoutY="485.0" mnemonicParsing="false" style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 2; -fx-background-radius: 2;" text="Min by Name" />
+        <Label layoutX="656.0" layoutY="540.0" style="-fx-font-style: italic;" text="%min_by_name_description" />
+
+        <Label layoutX="684.0" layoutY="536.0" style="-fx-font-style: italic;" />
+        <Label layoutX="102.0" layoutY="54.0" text="%standard_commands">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="444.0" layoutY="57.0" text="%removal_commands">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="730.0" layoutY="57.0" text="%add_filter_commands">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="TableButton1" layoutX="90.0" layoutY="191.0" mnemonicParsing="false" onAction="#switchToVisualize" prefHeight="68.0" prefWidth="146.0" style="-fx-background-color: blue;" text="Visualize" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Label layoutX="72.0" layoutY="269.0" style="-fx-font-style: italic;" text="%visualize_description" />
+        <Label layoutX="80.0" layoutY="397.0" style="-fx-font-style: italic;" text="%filtered_table_description" />
+
+        <Button fx:id="executeScriptButton" layoutX="83.0" layoutY="436.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" style="-fx-background-color: green;" text="Execute Script" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Button>
+        <Label layoutX="100.0" layoutY="536.0" style="-fx-font-style: italic;" text="%execute_script_description" />
+    </children>
+</AnchorPane>

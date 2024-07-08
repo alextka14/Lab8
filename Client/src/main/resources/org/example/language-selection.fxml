@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LanguageSelectionController">
+    <Label text="Выберите язык / Select a language" />
+    <Button text="Русский" onAction="#setRussian" />
+    <Button text="Lietuvių" onAction="#setLithuanian" />
+    <Button text="Español" onAction="#setSpanish" />
+    <Button text="Türkçe" onAction="#setTurkish" />
+</VBox>
